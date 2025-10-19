@@ -13,10 +13,6 @@ services:
         generateValue: true
       - key: POSTGRES_DB
         value: re_partners
-    disk:
-      name: postgres-data
-      mountPath: /var/lib/postgresql/data
-      sizeGB: 1
 
   - type: pserv
     name: re-partners-redis
