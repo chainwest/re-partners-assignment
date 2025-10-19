@@ -1,0 +1,42 @@
+# Git
+.git
+.gitignore
+.github
+
+# Build artifacts
+build/
+*.out
+*.test
+*.prof
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Documentation (not needed in container)
+*.md
+!README.md
+
+# Test files
+*_test.go
+
+# Scripts (not needed in container)
+test_*.sh
+scripts/smoke_test.sh
+scripts/setup.sh
+scripts/test.sh
+
+# Docker
+Dockerfile
+docker-compose.yaml
+.dockerignore
+
+# Misc
+.DS_Store
+*.log
+tmp/
+temp/
+
