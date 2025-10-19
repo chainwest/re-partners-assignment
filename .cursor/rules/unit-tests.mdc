@@ -1,0 +1,5 @@
+---
+description: Include appropriate unit tests to validate functionality
+globs: Include appropriate unit tests to validate functionality
+alwaysApply: true
+---
