@@ -4,7 +4,7 @@ This document describes the commit history of the Pack Calculation Service proje
 
 ## Commit Structure
 
-The project was committed following best practices with 16 logical commits organized by feature and layer:
+The project was committed following best practices with 19 logical commits organized by feature and layer:
 
 ### 1. Project Initialization
 - **301d516** - `chore: initialize Go project with dependencies and license`
@@ -127,6 +127,30 @@ The project was committed following best practices with 16 logical commits organ
   - GIF_DEMO_INSTRUCTIONS.md for demo recording
   - Curl examples and screenshots
 
+### 17. Commit History Documentation
+- **a30bc66** - `docs: add commit history documentation`
+  - Document all commits with descriptions
+  - Explain commit structure and ordering
+  - List conventional commit conventions
+  - Add verification commands
+  - Include statistics and best practices
+
+### 18. Docker Optimization
+- **0a4dff6** - `build: add dockerignore file`
+  - Exclude .git directory from Docker context
+  - Exclude build artifacts and coverage files
+  - Exclude IDE and OS specific files
+  - Reduce Docker image build context size
+
+### 19. CI/CD Automation
+- **8ca3647** - `ci: add GitHub Actions workflows`
+  - Add CI workflow for automated testing
+  - Run go fmt, vet, and staticcheck on push
+  - Execute unit tests with coverage reporting
+  - Build Docker image and verify
+  - Upload coverage artifacts
+  - Add release workflow for versioning
+
 ## Commit Conventions
 
 All commits follow the Conventional Commits specification:
@@ -151,10 +175,20 @@ All commits follow the Conventional Commits specification:
 
 ## Statistics
 
-- **Total commits**: 16
-- **Total files changed**: 49
-- **Total insertions**: 6,445 lines
+- **Total commits**: 19
+- **Total files changed**: 53
+- **Total insertions**: 7,111 lines
 - **Author**: eurbanovskiy
+
+### Commits by Type
+
+- **build**: 4 commits (Docker, Kubernetes, Makefile, .dockerignore)
+- **feat(infra)**: 3 commits (Config, Redis, PostgreSQL)
+- **docs**: 2 commits (Project docs, Commit history)
+- **ci**: 2 commits (Render.com, GitHub Actions)
+- **feat**: 5 commits (domain, usecase, http, cmd, ui)
+- **test**: 1 commit (Testing scripts)
+- **chore**: 1 commit (Project initialization)
 
 ## Verification
 
