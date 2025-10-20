@@ -2,8 +2,8 @@ app = "re-partners-assignment"
 primary_region = "fra"
 
 [build]
+  builder = "dockerfile"
   dockerfile = "deployments/Dockerfile"
-  ignorefile = ".dockerignore"
 
 [env]
   PORT = "8080"
