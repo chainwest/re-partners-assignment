@@ -2,7 +2,8 @@ app = "re-partners-assignment"
 primary_region = "fra"
 
 [build]
-  dockerfile = "deployments/Dockerfile"
+  [build.args]
+    GO_VERSION = "1.23"
 
 [env]
   PORT = "8080"
