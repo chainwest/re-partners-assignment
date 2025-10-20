@@ -1,7 +1,7 @@
 # ============================================
 # Build stage
 # ============================================
-FROM golang:1.23-alpine AS builder
+FROM golang:1.23.4-alpine3.20 AS builder
 
 # Install build dependencies
 RUN apk add --no-cache git make ca-certificates tzdata
@@ -30,7 +30,7 @@ RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 \
 # ============================================
 # Final stage (minimal runtime image)
 # ============================================
-FROM alpine:3.20
+FROM alpine:latest
 
 # Install runtime dependencies
 RUN apk --no-cache add ca-certificates tzdata wget curl
