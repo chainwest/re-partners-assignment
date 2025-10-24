@@ -225,6 +225,80 @@
             font-size: 0.85em;
             margin-top: 5px;
         }
+        
+        /* Mobile responsive styles */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.5em;
+                margin-bottom: 20px;
+            }
+            
+            .pack-size-row {
+                flex-wrap: nowrap;
+            }
+            
+            .pack-size-input {
+                min-width: 0;
+                flex: 1;
+                font-size: 16px; /* Prevents zoom on iOS */
+            }
+            
+            .btn-remove {
+                flex-shrink: 0;
+                padding: 10px 12px;
+                font-size: 0.85em;
+                white-space: nowrap;
+            }
+            
+            .items-input-group {
+                flex-wrap: wrap;
+            }
+            
+            .items-label {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+            
+            .items-input {
+                flex: 1;
+                min-width: 0;
+                max-width: none;
+                font-size: 16px; /* Prevents zoom on iOS */
+            }
+            
+            .btn-submit {
+                flex-shrink: 0;
+                white-space: nowrap;
+                padding: 10px 15px;
+            }
+            
+            .btn-add {
+                width: 100%;
+            }
+            
+            .example-link {
+                display: block;
+                margin-left: 0;
+                margin-top: 8px;
+            }
+            
+            .results-table {
+                font-size: 0.9em;
+            }
+            
+            .results-table th,
+            .results-table td {
+                padding: 8px;
+            }
+        }
     </style>
 </head>
 <body>
